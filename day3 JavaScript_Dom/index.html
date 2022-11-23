@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- we want defer here because js is an event-listener, doing the fastest thing first, etc.
+    the defer allows JS to run and then render the html so it works properly -->
+    <script src="js/main.js" defer></script>
+    <title>Day 3 - JS DOM Stuff ;)</title>
+</head>
+<body>
+    <h1 id="test">Hello World</h1>
+    <button id="color-button">Add Color to Text</button>
+
+    <!-- Copying Text to a clipboard -->
+    <div class="source" contenteditable="true">Grab a copy of me!</div>
+    <div class="target" contenteditable="true">...and paste it here!</div>
+
+    <!--  Using the DOM to grab form data and use it -->
+    <form name="testData" id="testDataForm">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name">
+        <button type='submit'id="submitButton">Submit</button>
+    </form>
+
+
+</body>
+</html>
